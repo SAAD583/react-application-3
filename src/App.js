@@ -1,5 +1,5 @@
 import React from "react";
-import "style.css"
+import "./style.css"
 import Values from "values.js"
 import Color from "./Components/Color";
 
