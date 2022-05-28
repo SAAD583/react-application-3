@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+            /* COLOR GENERATOR */
+
+
+body {
+    background-color: #f1f1f1;
+}
+
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors-container div {
+    width: 20%;
+    padding: 10px;
+    height: 150px;
+}
+
+.error {
+    outline: 1px solid red;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 1px;
+}
+
+form button {
+    background-color: rgb(77, 176, 209);
+    padding: 7px;
+    color: white;
+    border: none
+}
+
+form input {
+    outline: 1px solid rgb(77, 176, 209);
+    padding: 6px;
+    border: none
+}
