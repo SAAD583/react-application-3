@@ -25,6 +25,10 @@ body {
     height: 150px;
 }
 
+.colors-container div:hover {
+    cursor: pointer;
+}
+
 .error {
     outline: 1px solid red;
 }
@@ -33,18 +37,44 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 30px 1px;
 }
 
 form button {
-    background-color: rgb(77, 176, 209);
+    background-color: black;
     padding: 7px;
     color: white;
-    border: none
+    border: none;
+    opacity: .7;
+    transition: all ease-in-out .2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 
 form input {
-    outline: 1px solid rgb(77, 176, 209);
+    outline: 1px solid black;
     padding: 6px;
-    border: none
+    border: none;
+    margin: 5px 0;
+}
+
+form h2 {
+    margin: 5px 0;
+}
+
+.copied {
+    font-size: 0.9rem;
+    opacity: .5;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .colors-container div {
+        width: 33%;
+    }
 }

@@ -13,7 +13,7 @@ export default function(props) {
         const timeOut = setTimeout(() => {
             setClicked(false)
             console.log(true);
-        }, 2000)
+        }, 1000)
         return () => clearTimeout(timeOut)
     }, [clicked]) 
     return (
@@ -28,7 +28,7 @@ export default function(props) {
         }}>
             <p>{hex}</p>
             <p>{props.weight}%</p>
-            {clicked && <p> Copied to Clipboard</p>}
+            {clicked && <p className="copied"> Copied to Clipboard</p>}
         </div>
     )
 }

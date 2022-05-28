@@ -31,7 +31,7 @@ export default function() {
         <>
             <form onSubmit={handleSubmit}>
                 <h2>
-                    Color Generator: 
+                    Colors Generator: 
                 </h2>
                 <div>
                     <input type="text" 
